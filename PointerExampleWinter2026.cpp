@@ -61,7 +61,13 @@ int main()
 	///*int classSize = 10; 
 	//int* grades = new int[classSize];*/
 
+	// 2d array 
+	int** twodarray = new int* [10];
 
+	for (int i = 0; i < 10; i++)
+		twodarray[i] = new int[20];
+
+	twodarray[0][0] = 10; 
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
