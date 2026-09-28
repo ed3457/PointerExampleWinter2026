@@ -33,6 +33,34 @@ int main()
 	//int* ptr3 = 0;
 	//cout << ptr3 << endl; 
 
+	delete ptr2; //deallocation for a single variable 
+	ptr2 = new int[20]; 
+
+	for (int i = 0; i < 20; i++)
+		ptr2[i] = (i + 1);
+
+	/*for (int i = 0; i < 20; i++)
+		cout << ptr2[i] << endl;*/
+
+	int* ptr4 = ptr2; 
+
+	for (int i = 0; i < 20; i++)
+	{
+		cout << *ptr4 << endl;
+		ptr4++; 
+	}
+
+	//delete[] ptr2; //deallocation for an array 
+
+	//for (int i = 0; i < 20; i++)
+	//	cout << ptr2[i] << endl;
+
+
+	//int grades[1000];
+
+	///*int classSize = 10; 
+	//int* grades = new int[classSize];*/
+
 
 }
 
