@@ -68,6 +68,13 @@ int main()
 		twodarray[i] = new int[20];
 
 	twodarray[0][0] = 10; 
+
+	// deallocate 2d array
+	for (int i = 0; i < 10; i++)
+		delete[] twodarray[i];
+
+	delete[] twodarray;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
